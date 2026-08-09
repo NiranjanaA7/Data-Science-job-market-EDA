@@ -42,7 +42,7 @@ plt.rcParams["axes.titlecolor"] = PURPLE["dark_purple"]
 # ----------------------------------------------------------------------
 # Data Loading
 # ----------------------------------------------------------------------
-DATA_PATH = "C:/Users/ASAITHAMBI/OneDrive/Documents/dsjob_eda/data/featured_jobs1.csv"
+DATA_PATH = "featured_jobs1.csv"
 
 
 @st.cache_data
