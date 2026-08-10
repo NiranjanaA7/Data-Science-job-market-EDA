@@ -97,10 +97,3 @@ This is the widely-used public "Glassdoor Data Science Jobs" dataset (956 scrape
 - No predictive model yet — this is descriptive analytics only
 
 ---
-
-## Possible next steps
-
-- Switch remaining hardcoded paths to relative, config-driven paths
-- Add a simple salary-prediction model (regression on role, seniority, state, and skills)
-- Validate the regex skill extraction against hand-labeled postings and report precision/recall
-- Investigate whether dropped salary rows are missing at random
