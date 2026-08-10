@@ -8,12 +8,11 @@ An end-to-end analytics project that takes a raw Glassdoor "Data Science Jobs" d
 
 ## 🚀 Live Demo
 
-**[Open the dashboard →]([YOUR-APP-LINK-HERE](https://data-science-job-market-eda.streamlit.app/))**
+**[Open the dashboard →](https://data-science-job-market-eda.streamlit.app/)**
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([YOUR-APP-LINK-HERE](https://data-science-job-market-eda.streamlit.app/))
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://data-science-job-market-eda.streamlit.app/)
 
 ---
-
 ## What's in this repo
 
 | File | Purpose |
