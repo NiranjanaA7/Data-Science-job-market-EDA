@@ -10,7 +10,7 @@ An end-to-end analytics project that takes a raw Glassdoor "Data Science Jobs" d
 
 **[Open the dashboard →](YOUR-APP-LINK-HERE)**
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](YOUR-APP-LINK-HERE)
+[![Open in Streamlit]([https://static.streamlit.io/badges/streamlit_badge_black_white.svg](https://data-science-job-market-eda.streamlit.app/))](YOUR-APP-LINK-HERE)
 
 ---
 
