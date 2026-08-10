@@ -262,7 +262,7 @@ with tab_geo:
     sns.countplot(
         data=filtered, y="Job_State",
         order=top_states.index,
-        color=PURPLE["mauve"], ax=ax
+        color=PURPLE["light_violet"], ax=ax
     )
     ax.set_title("Top Hiring States")
     st.pyplot(fig)
