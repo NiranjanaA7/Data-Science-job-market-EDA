@@ -261,4 +261,4 @@ with tab_data:
     )
 
 st.markdown("---")
-st.caption("Built with Streamlit · Data cleaned & engineered via pandas notebooks")
+st.caption("Built with Streamlit")
