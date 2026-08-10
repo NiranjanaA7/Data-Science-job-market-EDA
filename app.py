@@ -40,6 +40,24 @@ sns.set_theme(style="whitegrid")
 plt.rcParams["axes.titlecolor"] = PURPLE["dark_purple"]
 
 # ----------------------------------------------------------------------
+# US State Abbreviation → Full Name Mapping
+# ----------------------------------------------------------------------
+US_STATE_NAMES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+    "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
+    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho",
+    "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
+    "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
+    "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
+    "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
+    "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+    "WI": "Wisconsin", "WY": "Wyoming", "DC": "District of Columbia",
+}
+# ----------------------------------------------------------------------
 # Data Loading
 # ----------------------------------------------------------------------
 DATA_PATH = "featured_jobs1.csv"
@@ -238,14 +256,25 @@ with tab_skills:
 
 # --- Geography Tab (Chart 5: Top Hiring States) ---------------------------
 with tab_geo:
+    top_states = filtered["Job_State"].value_counts().head(15)
+
     fig, ax = plt.subplots(figsize=(10, 7))
     sns.countplot(
         data=filtered, y="Job_State",
-        order=filtered["Job_State"].value_counts().head(15).index,
+        order=top_states.index,
         color=PURPLE["mauve"], ax=ax
     )
     ax.set_title("Top Hiring States")
     st.pyplot(fig)
+
+    # State abbreviation -> full name reference table for the chart above
+    state_table = pd.DataFrame({
+        "State (Abbr.)": top_states.index,
+        "Full State Name": [US_STATE_NAMES.get(s, "Unknown") for s in top_states.index],
+        "Job Postings": top_states.values,
+    })
+    st.markdown("**State Name Reference**")
+    st.dataframe(state_table, use_container_width=True, hide_index=True)
 
 # --- Raw Data Tab -----------------------------------------------------------
 with tab_data:
