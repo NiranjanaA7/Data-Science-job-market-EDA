@@ -51,7 +51,7 @@ plt.rcParams["axes.titlecolor"] = PURPLE["dark_purple"]
 # (this was Known Limitation #1 / interview Q14 in your own docs)
 # ----------------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = BASE_DIR / "data" / "featured_jobs.csv"
+DATA_PATH = BASE_DIR / "data" / "featured_jobs1.csv"
 MODEL_PATH = BASE_DIR / "salary_prediction_model.pkl"
 META_PATH = BASE_DIR / "salary_prediction_meta.json"
 
