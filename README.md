@@ -8,9 +8,9 @@ An end-to-end analytics project that takes a raw Glassdoor "Data Science Jobs" d
 
 ## 🚀 Live Demo
 
-**[Open the dashboard →](YOUR-APP-LINK-HERE)**
+**[Open the dashboard →](https://glassdoor-data-science-salary-predictor-and-dashboard-uawjgzvh.streamlit.app/)**
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](YOUR-APP-LINK-HERE)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://glassdoor-data-science-salary-predictor-and-dashboard-uawjgzvh.streamlit.app/)
 
 ---
 
@@ -144,4 +144,3 @@ This is the widely-used public "Glassdoor Data Science Jobs" dataset (956 scrape
 - Try richer features (e.g. job description length/embeddings, interaction terms) to push model R² higher
 - Add automated retraining / a data-versioning check so the dashboard warns if the model was trained on stale data
 - Switch notebooks and the training script to relative paths for portability
-- Deploy to Streamlit Community Cloud and swap in the live demo link above
