@@ -1,0 +1,151 @@
+{
+  "model_name": "Gradient Boosting",
+  "target": "Avg_Salary",
+  "data_path": "C:\\Users\\ASAITHAMBI\\OneDrive\\Documents\\dsjob_eda\\data\\featured_jobs.csv",
+  "n_rows": 467,
+  "n_features": 26,
+  "categorical_features": [
+    "Job_Simplified",
+    "Job_State",
+    "Experience_Group"
+  ],
+  "numeric_base_features": [
+    "Rating",
+    "Company_Age",
+    "Remote_Job"
+  ],
+  "skill_features": [
+    "Python_yn",
+    "Java_yn",
+    "R_yn",
+    "SQL_yn",
+    "Cpp_yn",
+    "JavaScript_yn",
+    "Ruby_yn",
+    "Perl_yn",
+    "Scala_yn",
+    "Go_yn",
+    "AWS_yn",
+    "Azure_yn",
+    "Spark_yn",
+    "Hadoop_yn",
+    "Docker_yn",
+    "Kubernetes_yn",
+    "Tableau_yn",
+    "Power_BI_yn",
+    "Machine_Learning_yn",
+    "Big_Data_yn"
+  ],
+  "all_features": [
+    "Job_Simplified",
+    "Job_State",
+    "Experience_Group",
+    "Rating",
+    "Company_Age",
+    "Remote_Job",
+    "Python_yn",
+    "Java_yn",
+    "R_yn",
+    "SQL_yn",
+    "Cpp_yn",
+    "JavaScript_yn",
+    "Ruby_yn",
+    "Perl_yn",
+    "Scala_yn",
+    "Go_yn",
+    "AWS_yn",
+    "Azure_yn",
+    "Spark_yn",
+    "Hadoop_yn",
+    "Docker_yn",
+    "Kubernetes_yn",
+    "Tableau_yn",
+    "Power_BI_yn",
+    "Machine_Learning_yn",
+    "Big_Data_yn"
+  ],
+  "categorical_options": {
+    "Job_Simplified": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Scientist",
+      "Director",
+      "ML Engineer",
+      "Manager",
+      "Other"
+    ],
+    "Job_State": [
+      "AL",
+      "AZ",
+      "CA",
+      "CO",
+      "CT",
+      "DC",
+      "DE",
+      "FL",
+      "GA",
+      "IA",
+      "ID",
+      "IL",
+      "IN",
+      "KS",
+      "KY",
+      "LA",
+      "MA",
+      "MD",
+      "MI",
+      "MN",
+      "MO",
+      "NC",
+      "NE",
+      "NJ",
+      "NM",
+      "NY",
+      "OH",
+      "OR",
+      "PA",
+      "RI",
+      "SC",
+      "TN",
+      "TX",
+      "UT",
+      "VA",
+      "WA",
+      "WI"
+    ],
+    "Experience_Group": [
+      "0-2 Years",
+      "10+ Years",
+      "3-5 Years",
+      "6-10 Years",
+      "Unknown"
+    ]
+  },
+  "numeric_ranges": {
+    "Rating": [
+      -1.0,
+      5.0
+    ],
+    "Company_Age": [
+      4.0,
+      279.0
+    ],
+    "Remote_Job": [
+      0.0,
+      1.0
+    ]
+  },
+  "baseline_test_mae": 22.756645637840375,
+  "test_mae": 22.756645637840375,
+  "test_rmse": 30.5894810067869,
+  "test_r2": 0.4344141850532476,
+  "within_10k_percent": 29.78723404255319,
+  "within_20k_percent": 57.446808510638306,
+  "within_30k_percent": 74.46808510638297,
+  "tuning_used": false,
+  "best_params": {
+    "model__learning_rate": 0.03,
+    "model__max_depth": 2,
+    "model__n_estimators": 200
+  }
+}
