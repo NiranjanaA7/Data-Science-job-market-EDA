@@ -42,7 +42,7 @@ RANDOM_STATE = 42
 # notebooks/04_model_training.py to the project root.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATA_PATH = BASE_DIR / "data" / "featured_jobs.csv"
+DATA_PATH = BASE_DIR / "featured_jobs.csv"
 
 DESCRIPTION_COLUMN = "Job Description"
 
