@@ -789,7 +789,7 @@ with tab_salary:
 with tab_roles:
 
     st.subheader(
-        "🧑‍💼 Roles & Experience"
+        "👩‍💻 Roles & Experience"
     )
 
     # ----------------------------------------------------------
